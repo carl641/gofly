@@ -258,6 +258,67 @@ p { margin: 0 0 1em; }
 .notice-arrow { margin-left: auto; color: var(--blue-600); font-size: 20px; transition: transform .2s; }
 .notice:hover .notice-arrow { transform: translateX(4px); }
 
+/* ---------- Promo: Dallas ---------- */
+.promo { padding: 40px 0 0; }
+.promo-card {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px 40px;
+  padding: 44px 48px 36px;
+  border-radius: 24px;
+  color: var(--white);
+  background: linear-gradient(120deg, #1a1f5c 0%, #4a2a8a 45%, #d9573b 85%, #f2a43b 100%);
+  box-shadow: var(--shadow-lg);
+}
+.promo-glow {
+  position: absolute; z-index: -1; right: 18%; top: -60%;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 210, 120, .55), rgba(255, 210, 120, 0) 65%);
+  animation: promoPulse 6s ease-in-out infinite;
+}
+@keyframes promoPulse { 50% { transform: scale(1.12); opacity: .8; } }
+.promo-skyline {
+  position: absolute; z-index: -1; right: 0; bottom: 0;
+  width: 70%; max-width: 640px; height: auto;
+  fill: rgba(15, 21, 51, .35);
+}
+.promo-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  background: rgba(255,255,255,.14); padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+}
+.promo-tag .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(242,184,75,.3); }
+.promo-copy h2 {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: clamp(38px, 5.5vw, 64px); letter-spacing: -.02em; line-height: 1; margin-bottom: 18px;
+}
+.promo-copy h2 span { color: var(--gold); font-style: italic; }
+.promo-route { display: flex; align-items: center; gap: 14px; font-weight: 700; letter-spacing: .08em; font-size: 18px; }
+.promo-path { position: relative; width: 140px; height: 2px; background: repeating-linear-gradient(90deg, rgba(255,255,255,.7) 0 6px, transparent 6px 12px); }
+.promo-plane { position: absolute; top: 50%; left: 0; transform: translate(-50%, -55%); font-size: 18px; animation: promoFly 3.5s ease-in-out infinite; }
+@keyframes promoFly { 0% { left: 0; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { left: 100%; opacity: 0; } }
+
+.promo-price { text-align: center; }
+.promo-price p { margin: 0; }
+.promo-from { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.85); }
+.promo-amount {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: clamp(80px, 10vw, 128px); line-height: .95; letter-spacing: -.03em;
+  text-shadow: 0 6px 30px rgba(0,0,0,.25); margin-bottom: 16px !important;
+}
+.promo-amount sup { font-size: .38em; vertical-align: .95em; margin-right: 2px; }
+.promo-amount .promo-star { font-size: .3em; margin-left: 2px; color: var(--gold); }
+.btn-gold { background: var(--gold); color: var(--navy-900); font-weight: 700; box-shadow: 0 10px 24px -8px rgba(0,0,0,.4); }
+.btn-gold:hover { background: #ffc962; }
+.promo-fine { grid-column: 1 / -1; margin: 0; font-size: 12px; color: rgba(255,255,255,.7); }
+
+@media (max-width: 760px) {
+  .promo-card { grid-template-columns: 1fr; padding: 32px 24px 26px; text-align: center; }
+  .promo-route { justify-content: center; }
+  .promo-path { width: 90px; }
+  .promo-skyline { width: 100%; }
+  .promo-glow { right: -20%; top: -30%; }
+}
+
 /* ---------- Welcome ---------- */
 .section { padding: 72px 0 96px; }
 .welcome-grid { display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: start; }
