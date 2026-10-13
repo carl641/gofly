@@ -29,7 +29,7 @@
 
   // Reveal on scroll + count-up for the boarding tracker
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var revealEls = document.querySelectorAll('.card, .notice, .welcome-copy, .side-link, .side-video');
+  var revealEls = document.querySelectorAll('.card, .notice, .promo-card, .welcome-copy, .side-link, .side-video');
 
   function countUp(el) {
     var target = parseInt(el.getAttribute('data-count'), 10);
