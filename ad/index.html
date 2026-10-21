@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fall Sale: Muscle Shoals to Dallas from $129 | Fly the Shoals</title>
+  <meta name="description" content="Fall Sale: low fares from Muscle Shoals (MSL) to Dallas (DFW) on Contour Airlines, from $129 one-way. Terms apply.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy-900: #141c4a;
+      --navy-800: #1b2559;
+      --blue-700: #233a8c;
+      --blue-500: #3b6fd1;
+      --sky:      #6cc4ee;
+      --white:    #ffffff;
+      --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--navy-800); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-sans);
+      color: var(--white);
+      background-color: var(--navy-800);
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(255,255,255,.55) 0, rgba(255,255,255,0) 28%),
+        radial-gradient(ellipse at 0% 50%, #4aa6e6 0, rgba(74,166,230,0) 55%),
+        linear-gradient(135deg, var(--blue-700) 0%, var(--navy-800) 100%);
+      background-repeat: no-repeat;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .deal {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 20px;
+    }
+
+    .sale {
+      margin: 0 0 12px;
+      font-size: clamp(40px, 9vw, 84px);
+      font-weight: 700;
+      letter-spacing: .06em;
+      line-height: 1;
+      color: var(--sky);
+    }
+
+    .route {
+      margin: 0 0 32px;
+      padding: 18px 32px;
+      max-width: 720px;
+      border-radius: 999px;
+      background: var(--navy-900);
+      font-size: clamp(22px, 4.4vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .route br { display: none; }
+    @media (min-width: 600px) { .route br { display: inline; } }
+
+    .price { margin: 0 0 36px; line-height: 1; }
+    .price-from { display: block; font-size: clamp(18px, 3vw, 26px); font-weight: 500; margin-bottom: 4px; }
+    .price-amount {
+      display: inline-flex;
+      align-items: flex-start;
+      font-size: clamp(110px, 24vw, 200px);
+      font-weight: 700;
+      letter-spacing: -.04em;
+    }
+    .price-amount sup { font-size: .32em; font-weight: 500; margin: .18em .06em 0 0; }
+    .price-unit { display: block; font-size: clamp(20px, 3.4vw, 30px); font-weight: 500; margin-top: 4px; }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 44px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, var(--sky) 0%, var(--blue-500) 100%);
+      color: var(--white);
+      font-size: clamp(20px, 3.4vw, 28px);
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 12px 28px -10px rgba(0,0,0,.5);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .btn:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+
+    .partners {
+      margin: 40px 0 0;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(255,255,255,.9);
+    }
+    .partners span { opacity: .5; margin: 0 10px; }
+
+    .fine { margin: 12px 0 0; font-size: 13px; color: rgba(255,255,255,.75); }
+  </style>
+</head>
+<body>
+
+  <main class="deal">
+    <p class="sale">FALL SALE</p>
+    <h1 class="route">Low Fares from<br> Muscle Shoals to Dallas</h1>
+
+    <p class="price">
+      <span class="price-from">Fares from</span>
+      <span class="price-amount"><sup>$</sup>129</span>
+      <span class="price-unit">one-way.*</span>
+    </p>
+
+    <a class="btn" href="https://www.flycontour.com/" target="_blank" rel="noopener">Book Now!</a>
+
+    <p class="partners">Contour<span aria-hidden="true">|</span>American Airlines</p>
+    <p class="fine">*Terms apply.</p>
+  </main>
+
+</body>
+</html>
